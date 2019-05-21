@@ -513,6 +513,11 @@ article {
     background-color: #283F5F;
   }
 }
+.hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 body {
   font-family: 'Nunito Sans', 'Open Sans';
 }
