@@ -140,6 +140,7 @@ table {
   font-display: swap;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .init-text-size h2 {
     color: #EF4B4B;
@@ -198,6 +199,18 @@ table {
     background-color: #283F5F;
     padding: 0% 5% 0% 5%;
   }
+=======
+.bottom-padding {
+  padding-bottom: 5%;
+}
+nav {
+  min-height: 50px;
+  max-height: 50px;
+  background-color: #283F5F;
+  padding: 0% 5% 0% 5%;
+}
+@media (max-width: 500px) {
+>>>>>>> master
   nav ul {
     width: 100%;
     height: 50px;
@@ -214,6 +227,7 @@ table {
     max-width: 100%;
   }
 }
+<<<<<<< HEAD
 @media (min-width: 501px) and (max-width: 900px) {
   figure img {
     max-width: 100%;
@@ -299,6 +313,8 @@ article {
     z-index: -10;
   }
 }
+=======
+>>>>>>> master
 @media (max-width: 500px) {
   section {
     display: flex;
@@ -317,6 +333,7 @@ article {
   section .header-wrapper {
     padding: 5%;
   }
+<<<<<<< HEAD
   section.reverse-wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -385,6 +402,12 @@ article {
   section .img-wrapper {
     width: 65%;
   }
+=======
+}
+section.reverse-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+>>>>>>> master
 }
 @media (max-width: 500px) {
   footer {
@@ -392,6 +415,7 @@ article {
     background-color: #283F5F;
   }
 }
+<<<<<<< HEAD
 @media (min-width: 501px) and (max-width: 900px) {
   footer {
     height: 100px;
@@ -404,6 +428,8 @@ article {
     background-color: #283F5F;
   }
 }
+=======
+>>>>>>> master
 body {
   font-family: 'Nunito Sans', 'Open Sans';
 }
