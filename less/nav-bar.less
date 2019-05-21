@@ -35,4 +35,22 @@ nav {
       }
     }
   }
+
+  @media @laptop {
+    min-height: @nav_heigth;
+    max-height: @nav_heigth;
+    background-color: @nav_color;
+    padding: 0% 5% 0% 5%;
+    ul {
+      width: 100%;
+      height: @nav_heigth;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: @nav_items_color;
+        // padding: 0% 5% 0% 5%;
+      }
+    }
+  }
 }
