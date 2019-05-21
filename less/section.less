@@ -1,0 +1,28 @@
+section 
+{
+  @media @mobile {
+
+    display: flex;
+    flex-direction: column;
+    h2 {
+      color: @header_color;
+      font-size: @header_text_size;
+      .bottom-padding();
+    }
+
+    p {
+      color: @text_color;
+      font-size: @text_size;
+      .bottom-padding();
+    }
+
+    .header-wrapper {
+      padding: 5%;
+    }
+  }
+
+  &.reverse-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
