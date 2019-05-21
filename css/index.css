@@ -252,6 +252,7 @@ article {
   }
   section:nth-child(even) {
     flex-direction: row;
+    background: #F8F8F8;
   }
   section h2 {
     color: #EF4B4B;
@@ -266,6 +267,10 @@ article {
   section .header-wrapper {
     width: 35%;
     padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   section .img-wrapper {
     width: 65%;
