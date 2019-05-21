@@ -19,10 +19,115 @@ section
     .header-wrapper {
       padding: 5%;
     }
+
+    &.reverse-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
-  &.reverse-wrapper {
+  @media @tablet {
+    padding: 5%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+
+    &:nth-child(even) {
+      flex-direction: row;
+      background: @abstract_color;
+    }
+    h2 {
+      color: @header_color;
+      font-size: @header_text_size;
+      .bottom-padding();
+    }
+
+    p {
+      color: @text_color;
+      font-size: @text_size;
+      .bottom-padding();
+    }
+
+    .header-wrapper {
+      width: 35%;
+      padding: 0% 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-wrapper {
+      width: 65%;
+    }
+  }
+
+  @media @laptop {
+    padding: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    &:nth-child(even) {
+      flex-direction: row;
+      background: @abstract_color;
+    }
+    h2 {
+      color: @header_color;
+      font-size: @header_text_size * 1.25;
+      .bottom-padding();
+    }
+
+    p {
+      color: @text_color;
+      font-size: @text_size * 1.25;
+      .bottom-padding();
+    }
+
+    .header-wrapper {
+      width: 35%;
+      padding: 0% 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-wrapper {
+      width: 65%;
+    }
+  }
+
+  @media @desktop {
+    padding: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    &:nth-child(even) {
+      flex-direction: row;
+      background: @abstract_color;
+    }
+    h2 {
+      color: @header_color;
+      font-size: @header_text_size * 1.25;
+      .bottom-padding();
+    }
+
+    p {
+      color: @text_color;
+      font-size: @text_size * 1.25;
+      .bottom-padding();
+    }
+
+    .header-wrapper {
+      width: 35%;
+      padding: 0% 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-wrapper {
+      width: 65%;
+    }
   }
 }
