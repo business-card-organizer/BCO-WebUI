@@ -143,13 +143,31 @@ table {
 .bottom-padding {
   padding-bottom: 5%;
 }
-nav {
-  min-height: 50px;
-  max-height: 50px;
-  background-color: #283F5F;
-  padding: 0% 5% 0% 5%;
-}
 @media (max-width: 500px) {
+  nav {
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #283F5F;
+    padding: 0% 5% 0% 5%;
+  }
+  nav ul {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul a {
+    color: white;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  nav {
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #283F5F;
+    padding: 0% 5% 0% 5%;
+  }
   nav ul {
     width: 100%;
     height: 50px;
@@ -164,6 +182,43 @@ nav {
 @media (max-width: 500px) {
   figure img {
     max-width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  figure img {
+    max-width: 100%;
+  }
+}
+article {
+  display: flex;
+}
+@media (max-width: 500px) {
+  article div.header-wrapper {
+    display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  article div.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    padding: 0% 5% 0% 5%;
+    box-sizing: border-box;
+  }
+  article div.header-wrapper h2 {
+    color: #EF4B4B;
+    font-size: 2em;
+    padding-bottom: 10%;
+  }
+  article div.header-wrapper p {
+    color: #283F5F;
+    font-size: 1em;
+    padding-bottom: 5%;
+  }
+  article div.header-wrapper .header-wrapper {
+    padding: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -184,12 +239,45 @@ nav {
   section .header-wrapper {
     padding: 5%;
   }
+  section.reverse-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
-section.reverse-wrapper {
-  display: flex;
-  flex-direction: column-reverse;
+@media (min-width: 501px) and (max-width: 900px) {
+  section {
+    padding: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section:nth-child(even) {
+    flex-direction: row;
+  }
+  section h2 {
+    color: #EF4B4B;
+    font-size: 2em;
+    padding-bottom: 5%;
+  }
+  section p {
+    color: #283F5F;
+    font-size: 1em;
+    padding-bottom: 5%;
+  }
+  section .header-wrapper {
+    width: 35%;
+    padding: 0% 5%;
+  }
+  section .img-wrapper {
+    width: 65%;
+  }
 }
 @media (max-width: 500px) {
+  footer {
+    height: 100px;
+    background-color: #283F5F;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
   footer {
     height: 100px;
     background-color: #283F5F;
