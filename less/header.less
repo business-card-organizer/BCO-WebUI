@@ -95,4 +95,19 @@ article {
       z-index: -10;
     }
   }
+
+  @media @desktop {
+    &::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      // top: 0;
+      // left: 0;
+      background-color: @abstract_color;
+      transform-origin: top left;
+      transform: skewY(-23deg);
+      z-index: -10;
+    }
+  }
 }
