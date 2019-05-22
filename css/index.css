@@ -233,6 +233,9 @@ nav {
     color: white;
   }
 }
+img#logo {
+  max-height: 70px;
+}
 @media (max-width: 500px) {
   figure img {
     max-width: 100%;
