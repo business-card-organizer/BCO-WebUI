@@ -4,6 +4,8 @@ section
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
     h2 {
       color: @header_color;
       font-size: @header_text_size;
@@ -30,7 +32,8 @@ section
     padding: 5%;
     display: flex;
     flex-direction: row-reverse;
-
+    align-items: center;
+    justify-content: center;
     &:nth-child(even) {
       flex-direction: row;
       background: @abstract_color;
@@ -100,7 +103,6 @@ section
     padding: 15%;
     display: flex;
     flex-direction: row-reverse;
-
     &:nth-child(even) {
       flex-direction: row;
       background: @abstract_color;
