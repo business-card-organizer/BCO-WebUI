@@ -1,8 +1,11 @@
-nav {
+#topnav {
   position: fixed;
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
   @media @mobile {
     min-height: @nav_heigth;
     max-height: @nav_heigth;
@@ -16,6 +19,7 @@ nav {
       align-items: center;
       a {
         color: @nav_items_color;
+        
         // padding: 0% 5% 0% 5%;
       }
     }
