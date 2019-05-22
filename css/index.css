@@ -537,9 +537,6 @@ footer nav li {
 .fade-in-element {
   animation: fade-in 1.4s;
 }
-body {
-  font-family: 'Nunito Sans', 'Open Sans';
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -605,4 +602,7 @@ h3 {
 }
 .team-role {
   color: #A4A7AA;
+}
+body {
+  font-family: 'Nunito Sans', 'Open Sans';
 }
