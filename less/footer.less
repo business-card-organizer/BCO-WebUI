@@ -1,21 +1,18 @@
 footer {
-  @media @mobile {
     height: 100px;
     background-color: @nav_color;
-  }
+    nav {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: white;
+        text-decoration: none;
+      }
 
-  @media @tablet {
-    height: 100px;
-    background-color: @nav_color;
-  }
-
-  @media @laptop {
-    height: 100px;
-    background-color: @nav_color;
-  }
-
-  @media @desktop {
-    height: 100px;
-    background-color: @nav_color;
-  }
+      li {
+        list-style: none;
+      }
+    }
 }
