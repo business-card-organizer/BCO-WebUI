@@ -7,10 +7,16 @@
 .content-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 5%;
   .content-wrapper {
     // padding: 0% 5%;
+    @media @mobile {
+      // padding: 5% 0% 5% 0%;
+      padding: 5% 0% 5% 0%;
+      box-sizing: border-box;
+    }
     // box-sizing: content-box;
     display: flex;
     justify-content: center;
@@ -31,6 +37,9 @@
     img {
       max-width: 150px;
     }
+    @media @mobile {
+      padding-bottom: 15%;
+    }
   }
 }
 .about-header {
@@ -39,6 +48,9 @@
   justify-content: center;
   align-items: center;
   padding: 5% 0% 0% 0%;
+  @media @mobile {
+    padding: 15% 0% 0% 0%;
+  }
 }
 
 .row {
@@ -70,4 +82,10 @@
 
 .team-role {
   color: #A4A7AA;
+}
+
+#team {
+  @media @desktop {
+    padding: 2% 20% 5% 20%;
+  }
 }
