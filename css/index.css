@@ -557,6 +557,7 @@ footer nav li {
   .content-container .content-wrapper {
     padding: 5% 0% 5% 0%;
     box-sizing: border-box;
+    text-align: center;
   }
 }
 .content-container .content-wrapper img {
